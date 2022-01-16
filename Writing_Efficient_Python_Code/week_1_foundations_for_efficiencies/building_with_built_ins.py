@@ -102,14 +102,13 @@ for i,name in enumerate(names):
     index_name = (i,name)
     indexed_names.append(index_name) 
 print(indexed_names)
+# [(0, 'Jerry'), (1, 'Kramer'), (2, 'Elaine'), (3, 'George'), (4, 'Newman')]
 
 
 # Rewrite the previous for loop using enumerate() and list comprehension to create a new list, indexed_names_comp.
-
-# Rewrite the above for loop using list comprehension
 indexed_names_comp = [(i,name) for i,name in enumerate(names)]
 print(indexed_names_comp)
-
+# [(0, 'Jerry'), (1, 'Kramer'), (2, 'Elaine'), (3, 'George'), (4, 'Newman')]
 
 # Create another list (indexed_names_unpack) by using the star character (*) to unpack the enumerate object created from using enumerate() on names. 
 # This time, start the index for enumerate() at one instead of zero.
@@ -117,7 +116,7 @@ print(indexed_names_comp)
 # Unpack an enumerate object with a starting index of one
 indexed_names_unpack = [*enumerate(names, 1)]
 print(indexed_names_unpack)
-
+# [(0, 'Jerry'), (1, 'Kramer'), (2, 'Elaine'), (3, 'George'), (4, 'Newman')]
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Built-in function: map()
 
@@ -158,13 +157,17 @@ for name in names:
 # Use map() and the method str.upper() to convert each name in the list names to uppercase. Save this to the variable names_map.
 # Use map to apply str.upper to each element in names
 names_map  = map(str.upper, names)
-      
+
+
 # Print the type of the names_map
 print(list(names_map))
+# [<map object at 0x7fd2865a88d0>] 
+      
  
 # Unpack the contents of names_map into a list called names_uppercase using the star character (*).
 names_uppercase = [names_map] 
  
 # Print names_uppercase and observe its contents.
 print(names_uppercase)
+# ['JERRY', 'KRAMER', 'ELAINE', 'GEORGE', 'NEWMAN']
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------      
