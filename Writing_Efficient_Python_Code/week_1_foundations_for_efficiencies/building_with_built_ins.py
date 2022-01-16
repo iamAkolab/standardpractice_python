@@ -91,6 +91,33 @@ for i in range(len(names)):
 [(0,'Jerry'),(1,'Kramer'),(2,'Elaine'),(3,'George'),(4,'Newman')]
 
 # But, that's not the most efficient solution. Let's explore how to use enumerate() to make this more efficient.
+
+
+#############################################################################################
+# Instead of using for i in range(len(names)), update the for loop to use i as the index variable and name as the iterator variable and use enumerate().
+
+# Rewrite the for loop to use enumerate
+indexed_names = []
+for i,name in enumerate(names):
+    index_name = (i,name)
+    indexed_names.append(index_name) 
+print(indexed_names)
+
+
+# Rewrite the previous for loop using enumerate() and list comprehension to create a new list, indexed_names_comp.
+
+# Rewrite the above for loop using list comprehension
+indexed_names_comp = [(i,name) for i,name in enumerate(names)]
+print(indexed_names_comp)
+
+
+# Create another list (indexed_names_unpack) by using the star character (*) to unpack the enumerate object created from using enumerate() on names. 
+# This time, start the index for enumerate() at one instead of zero.
+
+# Unpack an enumerate object with a starting index of one
+indexed_names_unpack = [*enumerate(names, 1)]
+print(indexed_names_unpack)
+
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Built-in function: map()
 
@@ -107,6 +134,37 @@ nums = [ 1, 2, 3,4 ,5]
 sqrd_nums = map(lambda x:x ** 2, nums)
 
 print(list(sqrd_nums)
+      
+ 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Built-in practice: map()
 
+# In this exercise, you'll practice using Python's built-in map() function to apply a function to every element of an object. Let's look at a list of party guests:
+
+names = ['Jerry', 'Kramer', 'Elaine', 'George', 'Newman']
+
+# Suppose you wanted to create a new list (called names_uppercase) that converted all the letters in each name to uppercase. you could accomplish this with the below for loop:
+
+names_uppercase = []
+
+for name in names:
+  names_uppercase.append(name.upper())
+
+['JERRY', 'KRAMER', 'ELAINE', 'GEORGE', 'NEWMAN']
+
+# Let's explore using the map() function to do this more efficiently in one line of code.
+      
+#############################################################################################
+# Use map() and the method str.upper() to convert each name in the list names to uppercase. Save this to the variable names_map.
+# Use map to apply str.upper to each element in names
+names_map  = map(str.upper, names)
+      
+# Print the type of the names_map
+print(list(names_map))
+ 
+# Unpack the contents of names_map into a list called names_uppercase using the star character (*).
+names_uppercase = [names_map] 
+ 
+# Print names_uppercase and observe its contents.
+print(names_uppercase)
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------      
