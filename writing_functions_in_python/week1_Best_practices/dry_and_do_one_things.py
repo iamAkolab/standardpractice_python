@@ -1,5 +1,6 @@
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Don't Repeat Yourself (DRY)
+
 -- it is easy to accidently introduce 
 -- if you want to change something you have to change it in multiple places
 -- repeated code is a sign that you need to write function
@@ -7,6 +8,7 @@
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Do one thing
+
 -- code becomes flexible
 -- less complex and more easily understand
 -- easier to test
