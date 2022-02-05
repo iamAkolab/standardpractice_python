@@ -27,6 +27,7 @@ print(nums[1,:])
 print(nums[nums > 6])
 #  [ 7  8  9 10]
 
+
 # Create nums_dbl that doubles each number in nums.
 nums_dbl = nums * 2
 print(nums_dbl)
