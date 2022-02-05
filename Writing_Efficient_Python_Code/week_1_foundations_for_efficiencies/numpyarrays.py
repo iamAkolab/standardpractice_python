@@ -5,6 +5,7 @@
 
 import numpy as np
 
+
 nums_np  = np.array(range(5))
 # array([1,2,3,4])
 
