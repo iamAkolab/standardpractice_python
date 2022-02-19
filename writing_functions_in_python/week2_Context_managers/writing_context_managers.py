@@ -5,6 +5,7 @@
 # by using a class that has special __enter__() and __exit__() methods or 
 # by decorating a certain kind of function. 
 
+
 @contextlib.contextmanager
 def my_context():
   # Add any set up you need
