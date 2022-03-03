@@ -1,4 +1,4 @@
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 ## How to create a context manager
 
 # There are two ways to define a context manager in Python: 
@@ -73,7 +73,7 @@ with database(url) as my_db:
 # The database() context manager that we've been looking at yields a specific value - the database connection - that can be used in the context block. Some context managers 
 # don't yield an explicit value. in_dir() is a context manager that changes the current working directory to a specific path and then changes it back after the context block is
 # done. It does not need to return anything with its "yield" statement. 
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 # The timer() context manager
 
 # A colleague of yours is working on a web service that processes Instagram photos. Customers are complaining that the service takes too long to identify whether or not an 
