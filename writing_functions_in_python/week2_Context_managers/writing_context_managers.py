@@ -103,7 +103,7 @@ with timer():
 # This should take approximately 0.25 seconds
 # Elapsed: 0.25s
   
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 ## A read-only open() context manager
 
 # You have a bunch of data files for your next deep learning project that took you months to collect and clean. It would be terrible if you accidentally overwrote one of
@@ -147,4 +147,4 @@ with open_read_only('my_file.txt') as my_file:
   time.sleep(0.25)
   
  # Congratulations! You wrote a context manager that acts like "open()" but operates in read-only mode!
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
